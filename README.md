@@ -2,7 +2,7 @@
 
 A robust, production-ready backend service for managing token allocation in hospital outpatient departments (OPD). Built with Node.js, Express, and modern best practices.
 
-## 🚀 Features
+##  Features
 
 - **Optimized Performance**: Uses Maps and efficient data structures for O(1) lookups
 - **Priority-Based Allocation**: Smart token allocation with 5-tier priority system
@@ -13,7 +13,7 @@ A robust, production-ready backend service for managing token allocation in hosp
 - **Production Ready**: Structured logging, error handling, and graceful shutdown
 - **Developer Friendly**: ESLint, Jest testing setup, and comprehensive documentation
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 src/
@@ -21,12 +21,11 @@ src/
 ├── controllers/      # Request handlers
 ├── middleware/       # Custom middleware
 ├── models/          # Data models
-├── routes/          # API routes
 ├── services/        # Business logic
 └── utils/           # Utilities and helpers
 ```
 
-## 📋 Priority System
+##  Priority System
 
 1. **Paid Priority** (Level 1) - Highest priority
 2. **Emergency** (Level 2) - Can preempt lower priorities
@@ -34,7 +33,7 @@ src/
 4. **Online Booking** (Level 4) - Pre-booked patients
 5. **Walk-in** (Level 5) - Lowest priority
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Node.js >= 16.0.0
@@ -194,7 +193,7 @@ yarn lint
 yarn lint:fix
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -214,14 +213,14 @@ RATE_LIMIT_MAX_REQUESTS=100
 - **Input Validation**: Joi schema validation
 - **Error Handling**: Structured error responses
 
-## 📊 Performance Optimizations
+##  Performance Optimizations
 
 - **Map Data Structures**: O(1) lookup time for doctors, slots, and tokens
 - **Priority Queues**: Efficient waiting list management
 - **Memory Management**: Optimized object creation and cleanup
 - **Request Validation**: Early validation to prevent processing invalid requests
 
-## 🚦 Error Handling
+##  Error Handling
 
 The system uses structured error handling with custom error classes:
 
@@ -230,14 +229,14 @@ The system uses structured error handling with custom error classes:
 - `ConflictError` (409): Duplicate or conflicting operations
 - `AppError`: Base error class for operational errors
 
-## 📝 Logging
+##  Logging
 
 Comprehensive logging with Winston:
 - **Development**: Console output with colors
 - **Production**: File-based logging (error.log, combined.log)
 - **Structured**: JSON format with metadata
 
-## 🔄 Migration from Old Code
+##  Migration from Old Code
 
 The refactored version addresses these issues from the original code:
 
@@ -252,7 +251,7 @@ The refactored version addresses these issues from the original code:
 9. ✅ **Testing**: Jest setup with coverage
 10. ✅ **Code Quality**: ESLint configuration
 
-## 🚀 Production Deployment
+##  Production Deployment
 
 ### Environment Setup
 1. Set `NODE_ENV=production`
@@ -274,7 +273,7 @@ The refactored version addresses these issues from the original code:
 }
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -283,6 +282,6 @@ The refactored version addresses these issues from the original code:
 5. Run linting and tests
 6. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
